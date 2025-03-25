@@ -5,15 +5,21 @@
   text-align: center;
 }
 
+.header-content {
+  margin-top: 2rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +28,7 @@
   from {
     transform: rotate(0deg);
   }
+  
   to {
     transform: rotate(360deg);
   }
@@ -35,8 +42,35 @@
 
 .card {
   padding: 2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Interactive Button Styles */
+.interactive-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #646cff; /* Primary color */
+  color: white;
+  cursor: pointer;
+}
+
+.interactive-button:hover {
+  background-color: #5a5edc; /* Darker shade on hover */
+}
+
+/* Greeting Style */
+.greeting {
+   font-size: 1.5rem;
+   color: #333; /* Darker text for better readability */
+   margin-top: -10px; /* Slightly adjust position */
 }
